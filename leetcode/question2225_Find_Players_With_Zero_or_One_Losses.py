@@ -38,3 +38,4 @@ class Solution:
                 one_lose.append(player)
         
         return [sorted(zero_lose), sorted(one_lose)]
+

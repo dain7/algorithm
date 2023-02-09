@@ -27,7 +27,7 @@ class Solution:
     def findJudge(self, n: int, trust: List[List[int]]) -> int:
         l=[[0,0] for x in range(n+1)]
         # 0은 누군가를 신뢰하는 경우 
-        # 1은 나를 신뢰하는 사람의 수
+        # 1은 나를 신뢰하는 사람의
         for i in trust:
             l[i[1]][1]+=1
             l[i[0]][0]+=1

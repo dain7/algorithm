@@ -1,21 +1,21 @@
 
-/**
-재귀함수 
- */
-
+/*
+DFS
+*/
 
 class Main {
-    public void DFS(int n) {
-        if(n==0) return ;
+    Node root;
+    public void DFS(Node root) {
+        if(root==null) return ;
         else {
-            DFS(n-1);
-            System.out.print(n + " ");
+            DFS(root.lt);
+            DFS(root.rt);
         }
     }
 
     public static void main(String[] args) {
         Main T = new Main();
-        T.DFS(3);
+        T.DFS(n);
     }
 }
 

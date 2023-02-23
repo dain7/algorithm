@@ -11,6 +11,7 @@ public class Main {
         answer = cur;
         for (int i=k; i<n; i++) {
             cur = cur-arr[i-k]+arr[i];
+            // answer=Math.max(answer,sum);
             if (answer < cur) answer = cur;
         }
 

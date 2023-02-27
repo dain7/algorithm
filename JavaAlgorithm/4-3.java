@@ -18,7 +18,7 @@ public class Main {
             map.put(arr[i-k], map.get(arr[i-k])-1);
         }
 
-        map.put(arr[i], map.getOrDefault(0, arr[i]+1));
+        map.put(arr[i], map.getOrDefault(arr[i],0)+1);
         answer.add(map.size());
     }
 

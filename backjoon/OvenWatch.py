@@ -1,7 +1,17 @@
 H, M = map(int, input().split())
-total = H * 60 + M - 45  # 분으로 만들어준다.
-if total < 0 : 
-    total += 60 *24 # 24시간,,을 분으로 만들어준다.
-H = total // 60 # 몫
-M = total % 60 # 나머지
+
+N = int(input())
+
+s = H * 60 + M + N
+H = s//60
+M = s%60
+
+if H >= 24:
+    H = H%24
+
 print(H, M)
+
+
+
+##### 다른사람 풀이 
+print((h+(m+c)//60)%24, (m+c)%60)

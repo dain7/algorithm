@@ -10,7 +10,7 @@ for _ in range(n):
     c = c % p[1]
     answer.append(c//p[2])
     c = c % p[2]
-    answer.append(c//p[3])
+    answer.append(c//p[3]
     c = c % p[3]
     print(*answer)
 
